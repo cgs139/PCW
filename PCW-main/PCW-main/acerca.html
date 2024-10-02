@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="fontello/css/fontello.css">
+        <link href="style.css" rel="stylesheet"> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PCW</title>
+    </head>
+    <body>
+        <header>
+            <div class="navegacion">
+                <input type="checkbox" id="menu-checked">
+                <label id="menu" for="menu-checked">
+                    <span id="abrir">&#9776;</span>
+                    <span id="cerrar">X</span>
+                </label> 
+                <nav>
+                    <ul>
+                        <li class="cab"><a href="index.html"><img src="imagenes/logo.png" alt="cabecera" width="300"></a></li>
+                        <li class="cab">
+                            <h1>Vecinos Conectados</h1>
+                            <h2>Al día con tu comunidad</h2>
+                        </li>
+                        <li class="cab2"><a href="index.html" id="nav_inicio" class="icon-home"><span> inicio</span></a></li>
+                        <li class="cab2"><a href="buscar.html" id="nav_buscar" class="icon-search"><span> buscar</span></a></li>
+                        <li class="cab2"><a href="nueva.html" id="nav_nueva" class="icon-plus"><span> nueva</span></a></li>
+                        <li class="cab2"><a href="login.html" id="nav_login" class="icon-user"><span> login</span></a></li>
+                        <li class="cab2"><a href="registro.html" id="nav_registro" class="icon-user-add"><span> registro</span></a></li>
+                        <li class="cab2"><a href="#" id="nav_logout" onclick="logout()" class="icon-user-delete"><span> logout</span></a></li>
+                    </ul>   
+                </nav>            
+            </div>
+        </header>
+        <fieldset class="acercade">
+            <legend>INFORMACIÓN</legend>
+            <p>Prática 2 de la asignatura Programación del Cliente Web, 2º curso Ingeniería Multimedia</p>
+            <p>Sitio web responsive de tipo social en el que los vecinos de una comunidad publican y comentan noticias e información del lugar en el que viven.</p>
+            <p>Hemos implementado:</p>
+            <ul>
+                <li>index.js</li>
+                <li>publicacion.js</li>
+                <li>buscar.js</li>
+                <li>nueva.js</li>
+                <li>login.js</li>
+                <li>registro.js</li>
+                <li>acerca.js</li>
+                <li>verifica.js</li>
+                <li>formulario_comentarios.html</li>
+            </ul>
+            <p>Hemos probado nuestra página web en distintos navegadores y no hemos encontrado ninguna incompatibilidad destacable.</p>
+            <p>Celia Gómez Sandoval - 49446341K - cgs139@alu.ua.es - Gr. 3 </p>
+            <p>Francisco José Delicado González - 24419427M - fjdg5@alu.ua.es - Gr. 3 </p>
+        </fieldset>
+        <footer>
+            <p>&copy; Celia Gómez, Francisco José Delicado - 2023 </p>
+            <a href="acerca.html">Acerca de</a>
+        </footer>
+        <script src="verifica.js"></script>
+    </body>

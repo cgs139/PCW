@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="fontello/css/fontello.css">
+        <link rel="icon" href="imagenes/logo.png"> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PCW</title>
+        <script src="index.js"></script>
+        <script src="verifica.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="navegacion">
+                <input type="checkbox" id="menu-checked">
+                <label id="menu" for="menu-checked">
+                    <span id="abrir">&#9776;</span>
+                    <span id="cerrar">X</span>
+                </label> 
+                <nav>
+                    <ul>
+                        <li class="cab"><a href="index.html"><img src="imagenes/logo.png" alt="cabecera" width="300"></a></li>
+                        <li class="cab">
+                            <h1>Vecinos Conectados</h1>
+                            <h2>Al día con tu comunidad</h2>
+                        </li>
+                        <li class="cab2"><a href="index.html" id="nav_inicio" class="icon-home"><span> inicio</span></a></li>
+                        <li class="cab2"><a href="buscar.html" id="nav_buscar" class="icon-search"><span> buscar</span></a></li>
+                        <li class="cab2"><a href="nueva.html" id="nav_nueva" class="icon-plus"><span> nueva</span></a></li>
+                        <li class="cab2"><a href="login.html" id="nav_login" class="icon-user"><span> login</span></a></li>
+                        <li class="cab2"><a href="registro.html" id="nav_registro" class="icon-user-add"><span> registro</span></a></li>
+                        <li class="cab2"><a href="#" id="nav_logout" onclick="logout()" class="icon-user-delete"><span> logout</span></a></li>
+                    </ul>   
+                </nav>            
+            </div>
+        </header>
+        <h2>Últimas publicaciones</h2>
+        <div class="fotosindex">
+            <ul id="publi">
+            </ul>
+        </div>
+        <div id="pagination">
+            <button id="first">Primera página</button>
+            <button id="previous">Página anterior</button>
+            <span id="current"></span>
+            <button id="next">Página siguiente</button>
+            <button id="last">Última página</button>
+        </div>  
+        <footer>
+            <p>&copy; Celia Gómez, Francisco José Delicado - 2023 </p>
+            <a href="acerca.html">Acerca de</a>
+        </footer>
+    </body>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="fontello/css/fontello.css">
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon" href="imagenes/logo.png"> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PCW</title>
+    </head>
+    <body onload="cargarBusqueda(); pedirZonas()">
+        <script>
+            function cargarBusqueda(){
+                buscarPorUrl(); 
+            }
+        </script>
+        <header>
+            <div class="navegacion">
+                <input type="checkbox" id="menu-checked">
+                <label id="menu" for="menu-checked">
+                    <span id="abrir">&#9776;</span>
+                    <span id="cerrar">X</span>
+                </label> 
+                <nav>
+                    <ul>
+                        <li class="cab"><a href="index.html"><img src="imagenes/logo.png" alt="cabecera" width="300"></a></li>
+                        <li class="cab">
+                            <h1>Vecinos Conectados</h1>
+                            <h2>Al día con tu comunidad</h2>
+                        </li>
+                        <li class="cab2"><a href="index.html" id="nav_inicio" class="icon-home"><span> inicio</span></a></li>
+                        <li class="cab2"><a href="buscar.html" id="nav_buscar" class="icon-search"><span> buscar</span></a></li>
+                        <li class="cab2"><a href="nueva.html" id="nav_nueva" class="icon-plus"><span> nueva</span></a></li>
+                        <li class="cab2"><a href="login.html" id="nav_login" class="icon-user"><span> login</span></a></li>
+                        <li class="cab2"><a href="registro.html" id="nav_registro" class="icon-user-add"><span> registro</span></a></li>
+                        <li class="cab2"><a href="#" id="nav_logout" onclick="logout()" class="icon-user-delete"><span> logout</span></a></li>
+                    </ul>   
+                </nav>            
+            </div>
+        </header>
+
+        <form id="formulario" method="post">
+            <fieldset>
+                <legend>Busca tu noticia</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <span class="icon-search"> </span>
+                                <input type="search" class="campodestacado" id="nombrebuscar" name="nombre" placeholder="Busca en Vecinos Conectados">
+                            </label>
+                        </li>
+                        <li class="fecha">
+                            <span class="icon-calendar"> </span><label for="start"> Desde: </label>
+                            <input type="date" class="campodestacado" id="start" name="trip-start" >
+                
+                            <label for="end"> - Hasta: </label>
+                            <input type="date" class="campodestacado" id="end" name="trip-end">
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <span class="icon-location"> </span>
+                                <label for="nivel">Ubicación</label>
+                                <input type="text" list="zonas" class="campodestacado" placeholder="Elige ubicación" name="zona" id="zona" > 
+                                    <datalist id="zonas">  
+                                    </datalist>                
+                            </div>
+                        </li>
+                        <li><input class="botonbuscar" type="submit" value="Buscar"></li>
+                    </ul>
+            </fieldset>
+        </form>
+
+        <h3>Resultados:</h3>
+        <div class="fotosindex">
+            <ul id="publi">
+            </ul>
+        </div>
+        <div id="pagination">
+            <button id="first">Primera página</button>
+            <button id="previous">Página anterior</button>
+            <span id="current"></span>
+            <button id="next">Página siguiente</button>
+            <button id="last">Última página</button>
+        </div>  
+        <footer>
+            <p>&copy; Celia Gómez, Francisco José Delicado - 2023 </p>
+            <a href="acerca.html">Acerca de</a>
+        </footer>
+        <script src="buscar.js"></script>
+        <script src="index.js"></script>
+        <script src="verifica.js"></script>
+    </body>
+</html>
