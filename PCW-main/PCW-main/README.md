@@ -37,7 +37,4 @@ Una vez instalado y configurado, puedes acceder al proyecto a través de la URL 
 
 Las contribuciones son bienvenidas. Si tienes alguna sugerencia para mejorar este proyecto, por favor, abre un issue o envía un pull request.
 
-## Contacto
-
-Si tienes preguntas o necesitas más información, puedes contactarme a través de [delicadofranvi@gmail.com](mailto:delicadofranvi@gmail.com).
 
